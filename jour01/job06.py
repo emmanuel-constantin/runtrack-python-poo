@@ -1,15 +1,15 @@
 class Rectangle:
     def __init__(self):
-        self.longueur = 10
-        self.largeur = 5
+        self.__longueur = 10
+        self.__largeur = 5
     def setLongueur(self, longueur):
-        self.longueur = longueur
+        self.__longueur = longueur
     def setLargeur(self, largeur):
-        self.largeur = largeur
+        self.__largeur = largeur
     def getLongueur(self):
-        print("rectangle de longueur", self.longueur)
+        print("rectangle de longueur", self.__longueur)
     def getLargeur(self):
-        print("rectangle de largeur", self.largeur)
+        print("rectangle de largeur", self.__largeur)
 
 rectangle1 = Rectangle()
 rectangle1.setLongueur(15)
